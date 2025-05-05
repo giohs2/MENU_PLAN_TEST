@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Bread Proofing",
+    "intensity": "Low",
+    "steps": [
+      {
+        "stepID": 1,
+        "stepName": "Preheat",
+        "finalTemperatureCelsius": 40.0,
+        "durationSeconds": 1800,
+        "isSteamerActive": true
+      },
+      {
+        "stepID": 2,
+        "stepName": "Proofing",
+        "finalTemperatureCelsius": 40.0,
+        "durationSeconds": 3600,
+        "isSteamerActive": true
+      },
+      {
+        "stepID": 3,
+        "stepName": "Rest",
+        "finalTemperatureCelsius": 30.0,
+        "durationSeconds": 600,
+        "isSteamerActive": false
+      }
+    ]
+  },
+  {
+    "name": "Bread Warming",
+    "intensity": "Medium",
+    "steps": [
+      {
+        "stepID": 1,
+        "stepName": "Preheat & Steam",
+        "finalTemperatureCelsius": 220.0,
+        "durationSeconds": 900,
+        "isSteamerActive": true
+      },
+      {
+        "stepID": 2,
+        "stepName": "Main Bake",
+        "finalTemperatureCelsius": 190.0,
+        "durationSeconds": 1800,
+        "isSteamerActive": false
+      },
+      {
+        "stepID": 3,
+        "stepName": "Cool Down",
+        "finalTemperatureCelsius": 50.0,
+        "durationSeconds": 1200,
+        "isSteamerActive": false
+      }
+    ]
+  },
+  {
+    "name": "Roast Chicken",
+    "intensity": "Medium",
+    "steps": [
+      {
+        "stepID": 1,
+        "stepName": "Initial Sear",
+        "finalTemperatureCelsius": 200.0,
+        "durationSeconds": 1200,
+        "isSteamerActive": false
+      },
+      {
+        "stepID": 2,
+        "stepName": "Roasting",
+        "finalTemperatureCelsius": 180.0,
+        "durationSeconds": 3600,
+        "isSteamerActive": false
+      },
+      {
+        "stepID": 3,
+        "stepName": "Final Browning",
+        "finalTemperatureCelsius": 210.0,
+        "durationSeconds": 600,
+        "isSteamerActive": false
+      }
+    ]
+  },
+  {
+    "name": "Pizza",
+    "intensity": "High",
+    "steps": [
+      {
+        "stepID": 1,
+        "stepName": "Preheat",
+        "finalTemperatureCelsius": 250.0,
+        "durationSeconds": 600,
+        "isSteamerActive": false
+      },
+      {
+        "stepID": 2,
+        "stepName": "Bake",
+        "finalTemperatureCelsius": 250.0,
+        "durationSeconds": 720,
+        "isSteamerActive": false
+      },
+      {
+        "stepID": 3,
+        "stepName": "Cool",
+        "finalTemperatureCelsius": 100.0,
+        "durationSeconds": 600,
+        "isSteamerActive": false
+      }
+    ]
+  },
+  {
+    "name": "Vegetable Steaming",
+    "intensity": "Low",
+    "steps": [
+      {
+        "stepID": 1,
+        "stepName": "Heat Water",
+        "finalTemperatureCelsius": 100.0,
+        "durationSeconds": 300,
+        "isSteamerActive": true
+      },
+      {
+        "stepID": 2,
+        "stepName": "Steam",
+        "finalTemperatureCelsius": 100.0,
+        "durationSeconds": 900,
+        "isSteamerActive": true
+      },
+      {
+        "stepID": 3,
+        "stepName": "Keep Warm",
+        "finalTemperatureCelsius": 60.0,
+        "durationSeconds": 300,
+        "isSteamerActive": false
+      }
+    ]
+  },
+  {
+    "name": "Pastry Bake",
+    "intensity": "Medium",
+    "steps": [
+      {
+        "stepID": 1,
+        "stepName": "Preheat",
+        "finalTemperatureCelsius": 175.0,
+        "durationSeconds": 900,
+        "isSteamerActive": false
+      },
+      {
+        "stepID": 2,
+        "stepName": "Initial Bake",
+        "finalTemperatureCelsius": 175.0,
+        "durationSeconds": 1200,
+        "isSteamerActive": false
+      },
+      {
+        "stepID": 3,
+        "stepName": "Reduced Heat Bake",
+        "finalTemperatureCelsius": 160.0,
+        "durationSeconds": 1200,
+        "isSteamerActive": false
+      }
+    ]
+  }
+]
