@@ -1,0 +1,128 @@
+{
+  "Steps": [
+    {
+      "Id": 1,
+      "Name": "Preheat",
+      "FinalTemperature": 30,
+      "DurationSeconds": 300,
+      "IsSteamerActive": true,
+      "TerminateIfTemperatureReached": false,
+      "TerminateIfTimeExpired": false
+    },
+    {
+      "Id": 2,
+      "Name": "Bake",
+      "FinalTemperature": 200,
+      "DurationSeconds": 600,
+      "IsSteamerActive": true,
+      "TerminateIfTemperatureReached": true,
+      "TerminateIfTimeExpired": true
+    },
+    {
+      "Id": 3,
+      "Name": "Cool Down",
+      "FinalTemperature": 25,
+      "DurationSeconds": 600,
+      "IsSteamerActive": false,
+      "TerminateIfTemperatureReached": false,
+      "TerminateIfTimeExpired": false
+    },
+    {
+      "Id": 4,
+      "Name": "Roast",
+      "FinalTemperature": 250,
+      "DurationSeconds": 720,
+      "IsSteamerActive": false,
+      "TerminateIfTemperatureReached": true,
+      "TerminateIfTimeExpired": true
+    }
+  ],
+  "Programs": [
+    {
+      "Id": 1,
+      "Name": "Main Dish",
+      "StepIds": [
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "Id": 2,
+      "Name": "Dessert",
+      "StepIds": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "ServicePlans": [
+    {
+      "Id": 0,
+      "Name": "Ipeco Dinner",
+      "Flight": {
+        "FlightId": 0,
+        "FlightNumber": "XY456",
+        "FlightDate": "02/06/2025",
+        "FlightTime": "15:00",
+        "CombinedFlightName": "XY456 02/06/2025 15:00",
+        "Units": [
+          {
+            "UnitNumber": 3,
+            "UnitName": "Oven 3",
+            "DeviceClass": 1,
+            "DeviceGroup": 2,
+            "DeviceId": 5
+          },
+          {
+            "UnitNumber": 4,
+            "UnitName": "Oven 4",
+            "DeviceClass": 1,
+            "DeviceGroup": 2,
+            "DeviceId": 6
+          }
+        ]
+      },
+      "FlightName": "XY456 02/06/2025 15:00",
+      "Cycles": [
+        {
+          "Name": "Cycle 1",
+          "CycleId": 1,
+          "Delay": "19:43:00",
+          "UnitPrograms": [
+            {
+              "Unit": {
+                "UnitNumber": 3,
+                "UnitName": "Oven 3",
+                "DeviceClass": 1,
+                "DeviceGroup": 2,
+                "DeviceId": 5
+              },
+              "CycleId": 1,
+              "Name": "Cycle 1: Oven 3",
+              "ProgramId": 1,
+              "StartOffset": 6
+            },
+            {
+              "Unit": {
+                "UnitNumber": 4,
+                "UnitName": "Oven 4",
+                "DeviceClass": 1,
+                "DeviceGroup": 2,
+                "DeviceId": 6
+              },
+              "CycleId": 1,
+              "Name": "Cycle 1: Oven 4",
+              "ProgramId": 2,
+              "StartOffset": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "NextStepId": 5,
+  "NextProgramId": 3,
+  "NextServicePlanId": 1
+}
